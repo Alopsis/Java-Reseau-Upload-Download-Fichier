@@ -17,7 +17,7 @@ import java.util.StringTokenizer;
 public class Serveur {
 
 	private static final int PORT = 2121;
-	private static final String CHEMIN_SERVEUR = "./FichiersServeur/";
+	private static final String CHEMIN_SERVEUR = "./tp1/FichiersServeur/";
 	private ServerSocket servSocket;
 	private Socket cliSocket;
 	private DataInputStream dIn;
@@ -122,7 +122,7 @@ public class Serveur {
 
 		String message = "";
 		while (message.equals("")) {
-			message = dOut.readUTF();
+			message = dIn.readUTF();
 			System.out.println("Reponse recu : ");
 			System.out.println(message);
 			File file = new File(CHEMIN_SERVEUR + message);

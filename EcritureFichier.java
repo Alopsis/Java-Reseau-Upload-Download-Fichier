@@ -23,6 +23,8 @@ public class EcritureFichier {
     }
 
     public void ecrireFichier(){
-        
+
     }
+
+
 }
